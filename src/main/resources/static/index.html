@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoinBet Simulator - Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+    <strong>CoinBet Simulator</strong>
+    <nav>
+        <a href="/index.html">Dashboard</a>
+        <a href="/betting.html">Betting</a>
+        <a href="/minigames.html">Mini-Games</a>
+        <button id="logout-button" type="button">Logout</button>
+    </nav>
+</header>
+
+<main class="page">
+    <h1>Dashboard</h1>
+    <p class="muted">All Coins are fictional and only used inside this simulator.</p>
+
+    <section>
+        <h2>Account</h2>
+        <p>User: <strong id="username">Loading...</strong></p>
+        <p>Coin Balance: <strong id="coin-balance">0</strong></p>
+        <button id="watch-ad-button" type="button">Watch Simulated Ad (+10 Coins)</button>
+        <p id="message" class="message"></p>
+    </section>
+
+    <section>
+        <h2>Recent Coin Transactions</h2>
+        <table>
+            <thead>
+            <tr><th>Amount</th><th>Reason</th><th>Date</th></tr>
+            </thead>
+            <tbody id="transactions-body"></tbody>
+        </table>
+    </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

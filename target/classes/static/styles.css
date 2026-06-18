@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background: #f7f7f7;
+}
+
+a {
+    color: #1456a0;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    padding: 0.45rem 0.7rem;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 0.25rem;
+    padding: 0.45rem;
+}
+
+label {
+    display: block;
+    margin: 0.75rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.site-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.narrow {
+    max-width: 520px;
+}
+
+section,
+.game-card {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.muted {
+    color: #666;
+}
+
+.message {
+    min-height: 1.5rem;
+    font-weight: bold;
+}
+
+.game-card form {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.tic-board {
+    display: grid;
+    grid-template-columns: repeat(3, 72px);
+    gap: 0.35rem;
+    margin: 1rem 0;
+}
+
+.tic-cell {
+    width: 72px;
+    height: 72px;
+    font-size: 1.6rem;
+    background: #fff;
+    border: 1px solid #888;
+}
+
+#click-target-button {
+    width: 120px;
+    height: 80px;
+    margin-left: 0.5rem;
+}

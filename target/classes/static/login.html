@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoinBet Simulator - Login</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="page narrow">
+    <h1>CoinBet Simulator</h1>
+    <p class="muted">Virtual Coins only. No real money, deposits, or withdrawals.</p>
+
+    <section>
+        <h2>Login</h2>
+        <form id="login-form">
+            <label>Username <input name="username" required autocomplete="username"></label>
+            <label>Password <input name="password" type="password" required autocomplete="current-password"></label>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Register</h2>
+        <form id="register-form">
+            <label>Username <input name="username" required minlength="3" autocomplete="username"></label>
+            <label>Password <input name="password" type="password" required minlength="6" autocomplete="new-password"></label>
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+
+    <p id="message" class="message"></p>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

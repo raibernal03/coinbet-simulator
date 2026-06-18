@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoinBet Simulator - Mini-Games</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+    <strong>CoinBet Simulator</strong>
+    <nav>
+        <a href="/index.html">Dashboard</a>
+        <a href="/betting.html">Betting</a>
+        <a href="/minigames.html">Mini-Games</a>
+        <button id="logout-button" type="button">Logout</button>
+    </nav>
+</header>
+
+<main class="page">
+    <h1>Mini-Games</h1>
+    <p>Coin Balance: <strong id="coin-balance">0</strong></p>
+    <p id="message" class="message"></p>
+
+    <section>
+        <h2>Tic Tac Toe</h2>
+        <p class="muted">Beat the simple computer player to earn 25 Coins.</p>
+        <div id="tic-board" class="tic-board"></div>
+        <button id="reset-tic-button" type="button">Reset Tic Tac Toe</button>
+    </section>
+
+    <section>
+        <h2>Arcade Clicker</h2>
+        <p class="muted">Click the target 10 times before the timer ends to earn 15 Coins.</p>
+        <p>Time: <strong id="clicker-time">10</strong> Score: <strong id="clicker-score">0</strong></p>
+        <button id="start-clicker-button" type="button">Start</button>
+        <button id="click-target-button" type="button" disabled>Target</button>
+    </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
